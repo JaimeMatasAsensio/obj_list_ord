@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <title>t4_obj_list_ord.html</title>
+    <meta charset="UTF-8">
+    <meta name="autor" content="Jaime Matas Asensio">
+    <link rel="icon" type="image/x-icon" href="imagenes/jsicon.ico">
+    <link rel="stylesheet" href="css/jscss.css">
+  </head>
+    <body>
+      <header>
+        <img src="imagenes/jsicon.ico" alt="icono javaScript">
+        <h1>Programación en entorno cliente - Tema 4</h1>
+        <h2>Uso de Objetos en JavaScript</h2>
+        <h2>Lista ordenada con elementos Object</h2>
+      </header>
+      <main>
+        <div class="apartado">
+          <h3 class="apartado">Lista que almacene objetos de tipo Person</h3>
+          <p class = "Enunciado">Crear una aplicacion que gestione una lista ordenada de objetos person. Los  objetos person tendran las siguientes propiedades</p>
+          <ul class="Subapartados">
+            <li>Propiedad: name. Contendra el nombre </li>
+            <li>Propiedad: surname. Contendra el apellido</li>
+            <li>Se necesita que los objetos esten ordenados dentro de la lista</li>
+            <li>Se debe realizar la gestion de errores mediante objetos</li>
+            <li>El codigo usado debe ser reutilizable</li>
+            <li>Debe ser lo mas eficiente que sea posible</li>
+          </ul>
+          <div class="cont">
+            <div class="der">
+              <div class="ctrlCrear">
+                <h4>Crear Lista</h4>
+                <label for="Capatity">Tamaño de la lista</label>
+                <input type="number" id="Capacity" name="Capacity" min="0" autocomplete="off">
+                <button id="create" name="create" class="btn" onclick="START(document.getElementById('Capacity').value)">CREAR LISTA</button>
+                <button id="clear" name="clear" class="btn borrar" onclick="CLEAR()">BORRAR LISTA</button>
+              </div>
+              <div class="ctrlList">
+                <h4>Controles de Lista</h4>
+                <label for="Name">Nombre</label>
+                <input type="text" id="Name" name="Name" autocomplete="off">
+                <label for="Surname">Apellido</label>
+                <input type="text" id="Surname" name="Surname" autocomplete="off">
+                <button id="Add" name="Add" class="btn" onclick="ADD(document.getElementById('Name').value,document.getElementById('Surname').value)">AÑADIR</button>
+                <button id="fIndex" name="fIndex" class="btn" onclick="FINDEX(document.getElementById('Name').value,document.getElementById('Surname').value)">PRIMER INDICE</button>
+                <button id="lIndex" name="lIndex" class="btn" onclick="LINDEX(document.getElementById('Name').value,document.getElementById('Surname').value)">ULTIMO INDICE</button>
+                <button id="fElement" name="fElement" class="btn" onclick="FELEMENT()">PRIMER ELEMENTO</button>
+                <button id="lElement" name="lElement" class="btn" onclick="LELEMENT()">ULTIMO ELEMENTO</button>
+
+                <label for="Surname">Indice Añadir</label>
+                <input type="number" id="indiceAdd" name="indiceAdd" autocomplete="off">
+                <button id="addAt" name="addAt" class="btn" onclick="ADDAT(document.getElementById('Name').value, document.getElementById('Surname').value, document.getElementById('indiceAdd').value)">AÑADIR EN INDICE</button>
+                <label for="Surname">Indice Remover</label>
+                <input type="number" id="indiceRem" name="indiceRem" autocomplete="off">
+                <button id="remove" name="remove" class="btn" onclick="REMOVE(document.getElementById('indiceRem').value)">REMOVER</button>
+                <button id="removeElement" name="removeElement" class="btn" onclick="REMOVE(document.getElementById('indiceRem').value, document.getElementById('Name').value, document.getElementById('Surname').value)">QUITAR ELEMENTO</button>
+              </div>
+            </div><div class="izq">
+              <div class="lista"  style="width:  90%;margin: 0 auto;">
+                  <p id="contList">
+
+                  </p>
+                  <p id="stringList" style="font-size:  0.8rem;">
+
+                  </p>
+                  <p id="outputList">
+
+                  </p>
+                </div>
+            </div>
+
+          </div>
+      </main>
+      <footer>
+        <p>Jaime Matas Asensio</p>
+        <p>Desarrollo Web en Entorno Cliente</p>
+        <p>Desarrollo de aplicaciones Web</p>
+        <p>I.E.S. Maestre de Calatrava. Ciudad Real</p>
+      </footer>
+    </body>
+<!-- El js va aqui -->
+<script type="text/javascript" src="js/t4_obj_list_ord.js"></script>
+<script type="text/javascript" src="js/t4_htmlControls.js"></script>
+</html>

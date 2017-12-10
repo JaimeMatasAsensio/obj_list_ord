@@ -1,0 +1,165 @@
+*{
+	margin: 0%;
+	padding: 0%;
+	font-family: sans-serif;
+}
+header{
+	text-align: center;
+	background: rgba(88, 233, 126, 1);
+	padding-top: 2%;
+  padding-bottom: 2%;
+  position: relative;
+}
+header img{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+header h1{
+	text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px rgb(206, 211, 207)
+
+}
+header h2{
+	text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+
+}
+main{
+	background-image: url("../imagenes/js.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 5px 150px;
+    background-size: 180px auto;
+}
+div.apartado{
+    max-width: 980px;
+    min-width: 600px;
+    margin: 0 auto;
+	background-color: rgba(88, 233, 126, 0.2);
+}
+div.apartado h3.apartado{
+	text-align: center;
+	background-color: rgba(88, 233, 126, 0.6);
+    padding: 5px 0;
+    font-size: 1.4rem;
+}
+div.apartado pre{
+	font-family: monospace;
+}
+div.apartado p{
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: justify;
+  background-color: white;
+}
+.Subapartados{
+width: 80%;
+margin: 0 auto;
+
+}
+.Subapartados li{
+  list-style: square;
+  margin-bottom: 5px;
+}
+
+.der, .izq{
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  margin: 20px 0;
+  min-height: 50px;
+}
+.der{
+  border-right: 2px solid black;
+}
+.der div{
+  width: 90%;
+  margin: 0 auto;
+}
+.btn{
+  background-color: rgba(88, 233, 126, 1);
+  border:2px solid rgba(88, 233, 126, 1);
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 5px 0;
+  margin: 6px auto;
+  width: 32%;
+  font-size: 0.6rem;
+}
+.borrar{
+  background-color: rgb(172, 77, 53);
+  color: white;
+  border:2px solid rgb(172, 77, 53);
+}
+.btn:hover{
+  cursor: pointer;
+}
+input{
+  border-radius: 5px;
+  padding: 5px 0;
+}
+label{
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-top: 5px;
+}
+.ctrlCrear{
+  border-bottom: 2px solid black;
+  padding-bottom: 30px;
+
+}
+.ctrlCrear input{
+  width: 30%;
+  margin-right:3px;
+  text-align: center;
+}
+.ctrlList{
+  margin-top: 20px;
+  padding-top: 10px;
+}
+.ctrlList input[type="text"]{
+  width: 100%;
+}
+.ctrlList input[type="number"]{
+  width: 30%;
+  text-align: center;
+}
+
+.izq .lista p{
+  display:inline-block;
+  width: 100%;
+  text-align: center;
+}
+footer{
+    width: 100%;
+    padding: 20px;
+	background-color: rgba(88, 233, 126, 1);
+
+}
+footer p{
+	text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+footer p:last-child{
+    margin-bottom: 20px;
+}
+.cont{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-top: 2px solid black;
+  position: relative;
+  min-height: calc(100vh - 74px);
+}
